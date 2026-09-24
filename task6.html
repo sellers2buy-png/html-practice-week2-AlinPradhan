@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Students Registration form</h1>
+    <form action="index.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" placeholder="Full Name" minlength="4" maxlength="25"><br>
+
+        <label for="password">Password:</label>
+        <input type="password" minlength="7" maxlength="25"><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="abc@gmail.com" ><br>
+
+        <label for="phone">Phone No:</label>
+        <input type="tel"><br>
+
+        <label for=" bday">Date of Birth:</label>
+        <input type="date" id=" bday"><br>
+
+        <label for="department">Department:</label><br>
+        <select id="department" name="department">
+        <option value="software engineering">Software Engineering</option>
+        <option value="business">Business Studies</option>
+        <option value="software design and analytics">Software Design and Analytics</option>
+    </select><br>
+    
+        <label for="title">Gender:</label>
+        <label for=" Male"> Male:</label>
+        <input type="radio" id="Male" value="Male" name="title">
+        <label for=" Female"> Female:</label>
+        <input type="radio" id="Female" value="Female" name="title"><br>
+        
+        
+        <label for="comment"> About Your Opinion:</label><br>
+        <textarea id="comment" row="4" column="30"></textarea> <br>
+
+        <input type="reset"> 
+        <input type="submit">
+</body>
+</html>
