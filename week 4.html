@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Profile</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 10px;
+      font-family: "Times New Roman", serif;
+      background: #ffffff;
+    }
+
+    /* Navigation bar */
+    nav {
+      
+      justify-content: center;
+      align-items: center;
+      gap: 80px;
+      background: #333333;
+      border-radius: 12px;
+      padding: 18px 20px;
+    }
+    nav img { height: 32px; }
+    nav a {
+      color: #ffffff;
+      margin: 0 8px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    /* Profile card */
+    .card {
+      width: 420px;
+      max-width: 90%;
+      margin: 50px auto;
+      padding: 20px 30px 30px;
+      background: #d3d3d3;
+      border: 2px solid #000000;
+      text-align: center;
+    }
+    h1 { color: navy; font-size: 34px; margin: 20px 0; }
+    h2 { color: darkgreen; font-size: 24px; margin: 18px 0 10px; }
+    p  { font-size: 18px; line-height: 1.2; margin: 0; }
+
+    .photo {
+      width: 120px;
+      height: 120px;
+      border: 3px solid #000000;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #ffffff;
+    }
+
+    ul { text-align: left; font-size: 20px; line-height: 1.2; padding-left: 40px; margin: 0; }
+    .card a { color: blue; font-size: 20px; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <img src="/images/logo.png" alt="Logo">
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#website">Website</a>
+    </div>
+  </nav>
+
+  <div class="card">
+    <h1>Alin Pradhan</h1>
+    <img class="photo" src="/images/golds.gif" alt="Student Photo">
+
+    <h2 id="about">About Me</h2>
+    <p>Hello! My name is Alin Pradhan. I am a computer science student and I am learning HTML, CSS and JavaScript.</p>
+
+    <h2 id="skills">My Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>C#</li>
+    </ul>
+
+    <h2 id="website">My Website</h2>
+    <a href="https://example.com" target="_blank">Visit My Website</a>
+  </div>
+
+</body>
+</html>
